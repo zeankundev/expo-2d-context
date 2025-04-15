@@ -958,6 +958,8 @@ export default class Expo2DContext {
   }
 
   fillText(text, x, y, maxWidth) {
+    // If three arguments are required, then maxWidth shouldn't be needed, and
+    // is only required when needed.
     if (arguments.length !== 3 && arguments.length !== 4) throw new TypeError();
     this._drawText(text, x, y, maxWidth, -1);
   }

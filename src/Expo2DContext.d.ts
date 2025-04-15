@@ -67,7 +67,7 @@ export default class Expo2DContext {
   drawImage(): void;
   measureText(text: string): TextMetrics;
   initializeText(): Promise<void>;
-  fillText(text: string, x: number, y: number, maxWidth: number): void;
+  fillText(text: string, x: number, y: number, maxWidth?: number): void;
   strokeText(text: string, x: number, y: number, maxWidth: number): void;
   clearRect(x: number, y: number, w: number, h: number): void;
   fillRect(x: number, y: number, w: number, h: number): void;
